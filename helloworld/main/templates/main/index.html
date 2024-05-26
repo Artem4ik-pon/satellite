@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Совместно с моими учителями информатики в школе и в УникУме я сделал проект, собирающий данные с двух спутников: KUZBASS-300 и KUZGTU-1. Данный проект представляет из себя сервер для графического представления изменения динамических параметров спутников.</p>
+        <a href="{% url 'about' %}"  class="btn btn-warning">{% filter upper %}На страницу про нас{% endfilter %}</a>
+    </div>
+{% endblock %}

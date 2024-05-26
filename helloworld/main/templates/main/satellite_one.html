@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}График спутника{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>График спутника</h1>
+        <p>График угла наклона спутника KUZBASS-300</p>
+        <a href="{% url 'satellite11' %}"  class="btn btn-danger">{% filter upper %}Показать график{% endfilter %}</a>
+        <p>Таким образом можно понять, что угол наклона рассматриваемого спутника увеличивается,
+            а соответственно относительно скоро он может критично накрениться
+            и перестать функционировать.</p>
+        <p>График эксцентриситета спутника KUZBASS-300</p>
+        <a href="{% url 'satellite12' %}"  class="btn btn-danger">{% filter upper %}Показать график{% endfilter %}</a>
+    </div>
+{% endblock %}

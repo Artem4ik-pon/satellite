@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}График спутника{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>График спутника</h1>
+        <p>График угла наклона спутника KUZGTU-1</p>
+        <a href="{% url 'satellite21' %}"  class="btn btn-danger">{% filter upper %}Показать график{% endfilter %}</a>
+        <p>Таким образом можно понять, что угол наклона спутника увеличивается, но до критического состояния ему еще далеко.</p>
+        <p>График эксцентриситета спутника KUZGTU-1</p>
+        <a href="{% url 'satellite22' %}"  class="btn btn-danger">{% filter upper %}Показать график{% endfilter %}</a>
+    </div>
+{% endblock %}
